@@ -23,7 +23,7 @@
  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <Cordova/CDV.h>
+#import <Cordova/CDVPlugin.h>
 
 @interface CDVJSBridge : CDVPlugin
 

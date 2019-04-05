@@ -24,7 +24,7 @@
  */
 
 #import "CDVJSBridge.h"
-#import <Cordova/CDV.h>
+#import <Cordova/CDVPlugin.h>
 
 @implementation CDVJSBridge
 
