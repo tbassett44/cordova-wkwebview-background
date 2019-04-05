@@ -1,0 +1,31 @@
+{
+  "name": "cordova-wkwebview-background",
+  "version": "0.0.1",
+  "description": "Background Javascript bridge ",
+  "cordova": {
+    "id": "cordova-wkwebview-background",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbassett44/cordova-wkwebview-background.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "ecosystem:phonegap",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Tom Bassett",
+  "license": "MIT",
+  "homepage": "https://github.com/tbassett44/cordova-wkwebview-background"
+}

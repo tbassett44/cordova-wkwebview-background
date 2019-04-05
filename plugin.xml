@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    id="cordova-wkwebview-background"
+    version="0.0.1">
+
+    <name>WkWebview Background JS</name>
+    <description>Background Javascript bridge </description>
+    <license>MIT</license>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    <platform name="ios">
+        <header-file src="src/ios/CDVJSBridge.h" />
+        <source-file src="src/ios/CDVJSBridge.m" />
+        <js-module src="www/background_test.js" name="CDVJSBridge">
+            <clobbers target="window.backgroundJsBridge" />
+        </js-module>
+    </platform>
+</plugin>
