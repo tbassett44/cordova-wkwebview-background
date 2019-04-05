@@ -2,7 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     id="cordova-wkwebview-background"
-    version="0.0.3">
+    version="0.0.4">
 
     <name>WkWebview Background JS</name>
     <description>Background Javascript bridge </description>
@@ -11,9 +11,11 @@
         <engine name="cordova" version=">=3.0.0" />
     </engines>
     <platform name="ios">
-        <feature name="CDVJSBridge">
-            <param name="ios-package" value="CDVJSBridge" />
-        </feature>
+        <config-file target="config.xml" parent="/*">
+            <feature name="CDVJSBridge">
+                <param name="ios-package" value="CDVJSBridge" />
+            </feature>
+        </config-file>
         <header-file src="src/ios/CDVJSBridge.h" />
         <source-file src="src/ios/CDVJSBridge.m" />
         <js-module src="www/background_test.js" name="CDVJSBridge">
